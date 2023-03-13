@@ -1,0 +1,227 @@
+.katalog {
+    width: 1440px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 60px;
+    position: relative;
+    /* margin-bottom: 50px; */
+}
+
+.katalog .btns {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 200px;
+    right: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btns button {
+    width: 35px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.katalog h1 {
+    color: #8e4050;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.katalog h3 {
+    font-size: 20px;
+    color: #666666;
+}
+
+.katalog .carusel {
+    width: 1300px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.katalog .carusel .slide {
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.katalog .slide-item {
+    width: 250px;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.201);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+
+.katalog .slide-item img {
+    width: 200px;
+    height: auto;
+
+}
+
+.katalog .slide-item h2 {
+    width: 100px;
+    width: 90%;
+    text-align: center;
+    color: #8e4050;
+    font-family: sans-serif;
+}
+
+.katalog .slide-item a {
+    padding: 8px 30px;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-decoration: none;
+    border-radius: 25px;
+    background: linear-gradient(125deg, #666666 60%, #8e4050 40%);
+    color: #fff;
+}
+
+
+@media (min-width: 350px) and (max-width: 450px) {
+    .katalog {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .katalog .btns {
+        display: none;
+    }
+
+    .katalog h1 {
+        width: 100%;
+        font-size: 2.0rem;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .katalog h3 {
+        font-size: 18px;
+    }
+
+    .katalog .carusel {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+    }
+
+    .katalog .carusel .slide {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .katalog .slide-item {
+        width: 200px;
+        height: 300px;
+        margin: 10px 0;
+    }
+
+    .katalog .del {
+        display: none;
+    }
+
+    .katalog .slide-item img {
+        width: 150px;
+        height: auto;
+
+    }
+
+    .katalog .slide-item h2 {
+        width: 90%;
+        text-align: center;
+        color: #8e4050;
+        font-family: sans-serif;
+    }
+
+    .katalog .slide-item a {
+        padding: 6px 25px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1100px) {
+    .katalog {
+        width: 100%;
+        height: 920px;
+        padding: 20px;
+        align-content: center;
+    }
+
+    .katalog .btns {
+        display: none;
+    }
+
+    .katalog .del {
+        display: none;
+    }
+
+    .katalog h1 {
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .katalog h3 {
+        font-size: 20px;
+        color: #666666;
+    }
+
+    .katalog .carusel {
+        width: 100%;
+        height: auto;
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .katalog .carusel .slide {
+        margin-top: 100px;
+        position: static;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        align-items: center;
+        transition: all 0.3s;
+    }
+
+    .katalog .slide-item {
+        width: 250px;
+        height: 310px;
+        margin: 10px 0;
+    }
+
+
+
+}
